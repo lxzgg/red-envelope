@@ -9,6 +9,9 @@ html {
   // 移动端自适应
   font-size: calc(#{$rootSize} / #{$rootWidth} * 100vw);
   font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+html, body {
   height: 100%;
 }
 

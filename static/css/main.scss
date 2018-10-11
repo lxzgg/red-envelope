@@ -86,49 +86,49 @@
 
 // 登陆页面
 .login {
+  height: 100%;
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
 
-  main {
+  .phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 350px;
 
-    .phone {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 350px;
+    input {
+      width: px2rem(460);
+      height: px2rem(60);
 
-      input {
-        width: px2rem(460);
-        height: px2rem(60);
-
-        padding: 0 px2rem(30);
-        border-radius: px2rem(60);
-      }
-
-      button {
-        width: px2rem(460);
-        height: px2rem(60);
-        margin-top: px2rem(40);
-        color: #FFF;
-        background-color: #f1c51d;
-        border-radius: px2rem(60);
-      }
+      padding: 0 px2rem(30);
+      border-radius: px2rem(60);
     }
 
-    .desc {
-      position: absolute;
-      bottom: px2rem(130);
-      padding: 0 px2rem(30);
-      margin-top: px2rem(60);
-      font-size: px2rem(24);
-      color: #333333;
+    button {
+      width: px2rem(460);
+      height: px2rem(60);
+      margin-top: px2rem(40);
+      color: #FFF;
+      background-color: #f1c51d;
+      border-radius: px2rem(60);
     }
   }
+
+  .desc {
+    position: absolute;
+    bottom: px2rem(130);
+    padding: 0 px2rem(30);
+    margin-top: px2rem(60);
+    font-size: px2rem(24);
+    color: #333333;
+  }
+
 }
 
 // 代理中心
 .proxy {
+  height: 100%;
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -157,53 +157,94 @@
 
   }
 
-  main {
+  .list {
 
-    .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
+    padding: px2rem(30);
+    .item {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
 
-      padding: px2rem(30);
-      .item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+      width: px2rem(215);
+      height: px2rem(215);
+      margin: px2rem(15) 0;
+      border-radius: px2rem(20);
 
-        width: px2rem(215);
-        height: px2rem(215);
-        margin: px2rem(15) 0;
-        border-radius: px2rem(20);
+      background: url(../image/proxy_frame.png) no-repeat;
+      background-size: px2rem(215) px2rem(215);
 
-        background: url(../image/proxy_frame.png) no-repeat;
-        background-size: px2rem(215) px2rem(215);
-
-        .icon {
-          font-size: px2rem(60);
-          color: #999;
-        }
-
-        .item-name {
-          margin-top: px2rem(15);
-          font-size: px2rem(26);
-          color: #666;
-        }
-
-      }
-      .active {
-        .icon {
-          color: #f06063;
-        }
-        .item-name {
-          color: #ee3e53;
-        }
+      .icon {
+        font-size: px2rem(60);
+        color: #999;
       }
 
+      .item-name {
+        margin-top: px2rem(15);
+        font-size: px2rem(26);
+        color: #666;
+      }
+
+    }
+    .active {
+      .icon {
+        color: #f06063;
+      }
+      .item-name {
+        color: #ee3e53;
+      }
     }
 
   }
 
+}
+
+// 分享二维码页面
+.code {
+  height: 100%;
+  padding-bottom: px2rem(100);
+  background: url(../image/login_bg.png) no-repeat fixed;
+  background-size: 100% 100%;
+
+  .QR_Code {
+    display: flex;
+    justify-content: center;
+    padding-top: px2rem(400);
+    img {
+      width: px2rem(320);
+      height: px2rem(320);
+    }
+  }
+}
+
+// 拆红包
+.openRedBag {
+  height: 100%;
+  padding-bottom: px2rem(100);
+  background: url(../image/login_bg.png) no-repeat fixed;
+  background-size: 100% 100%;
+
+  .redBag {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: px2rem(450);
+
+    .bag-item {
+      display: flex;
+      justify-content: center;
+      margin-top: px2rem(20);
+      width: 20%;
+      img {
+        width: px2rem(120);
+        height: px2rem(155);
+      }
+    }
+
+  }
 }

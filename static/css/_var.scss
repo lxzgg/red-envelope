@@ -8,23 +8,23 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 
-$blue  : #007bff !default;
+$blue: #007bff !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
-$pink  : #e83e8c !default;
-$red   : #dc3545 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
 $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
-$green : #28a745 !default;
-$teal  : #20c997 !default;
-$cyan  : #17a2b8 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 
 // 设计图宽度
-$rootWidth: 750  !default;
+$rootWidth: 750 !default;
 // 根字体大小
-$rootSize:32     !default;
+$rootSize: 32 !default;
 //排除最后一个
-$not-last:':not(:last-child)';
+$not-last: ':not(:last-child)';
 
 @function px2rem($px:0) {
   @return $px / $rootSize * 1rem;
