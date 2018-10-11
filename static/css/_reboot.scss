@@ -1,0 +1,59 @@
+/********************reboot********************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  // 移动端自适应
+  font-size: calc(#{$rootSize} / #{$rootWidth} * 100vw);
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+  height: 100%;
+}
+
+body, p, ul, ol, th, td, dl, dd, h1, h2, h3, h4, h5, h6, form, input, select, textarea {
+  // 去边距
+  margin: 0;
+  padding: 0;
+}
+
+i, em {
+  // 将斜体变成正常字体
+  font-style: normal;
+}
+
+li {
+  // 去圆点
+  list-style-type: none;
+}
+
+a {
+  // 去下划线
+  text-decoration: none;
+}
+
+img {
+  // 去边框
+  border: none;
+  // 顶部对齐
+  vertical-align: top;
+}
+
+table {
+  // 合并边框
+  border-collapse: collapse;
+}
+
+input, button, textarea {
+  // 获取焦点边框不变色
+  outline: none;
+  border: none;
+}
+
+textarea {
+  // 不能调整尺寸
+  resize: none;
+  // 显示滚动条
+  overflow: auto;
+}

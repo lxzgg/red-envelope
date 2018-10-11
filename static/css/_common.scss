@@ -1,0 +1,23 @@
+@import "var";
+@import "reboot";
+@import "mixins";
+@import "icon";
+
+/********************common********************/
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+small, .small {
+  font-size: 80%;
+}
+
+.text-justify {
+  text-align: justify;
+  text-align-last: justify;
+}

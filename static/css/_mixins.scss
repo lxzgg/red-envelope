@@ -1,0 +1,63 @@
+// 省略号
+@mixin ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 箭头
+@mixin arrow($right:15) {
+  // $right距离右边距离
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - #{px2rem(8)});
+    right: px2rem(4+$right);
+    display: inline-block;
+    width: px2rem(16);
+    height: px2rem(16);
+    border-width: px2rem(4) px2rem(4) 0 0;
+    border-style: solid;
+    border-color: #C0C0C0;
+    transform: rotateZ(45deg);
+  }
+}
+
+// 底边框
+@mixin border($last:'') {
+  position: relative;
+  &#{$last}::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    pointer-events: none;
+  }
+}
+
+// 图片高度自适应
+@mixin img($height:400) {
+  position: relative;
+  padding-top: percentage($height / $rootWidth);
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// 图片高度固定
+@mixin bg-img($height:400,$url:'https://picsum.photos/1000/400') {
+  height: #{$height}px;
+  background: url($url) center center;
+  background-size: cover;
+}
