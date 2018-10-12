@@ -107,23 +107,11 @@ function prompt(options) {
   document.body.appendChild(dialog_box)
 }
 
-window.onload = function () {
-  tabBar()
-}
-
 // 底部导航
-function tabBar() {
+function tabBar(tabIndex) {
   const tabBar = document.getElementById('tabBar')
   const bar = tabBar.getElementsByClassName('bar')
 
-  let tabIndex = sessionStorage.getItem('tabIndex') || 2
   bar[tabIndex].classList.add('active')
-
-  for (let i = 0; i < bar.length; i++) {
-    bar[i].onclick = function (e) {
-      if (this.className.includes('active')) return e.preventDefault()
-      sessionStorage.setItem('tabIndex', String(i))
-    }
-  }
 }
 
