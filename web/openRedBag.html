@@ -15,7 +15,7 @@
 
 <main class="openRedBag">
 
-  <div class="redBag">
+  <div class="redBag" id="redBag">
 
 
     <div class="bag-item">
@@ -97,17 +97,35 @@
 </script>
 
 <script>
-  tabBar(1)
-</script>
 
-<script>
-  // prompt({
-  //   message: '没有红包可拆!',
-  //   cancel: false,
-  //   success: function () {
-  //     window.location.href = 'redBag.html'
-  //   },
-  // })
+  tabBar(1)
+
+  // 判断有没有红包可以拆,没有弹出提示
+  prompt({
+    message: '没有红包可拆!',
+    cancel: false,
+    success: function () {
+      window.location.href = 'redBag.html'
+    },
+  })
+
+  let click = true // 防二次拆红包
+  const redBag = document.getElementById('redBag')
+  const item = redBag.getElementsByClassName('bag-item')
+
+  for (let i = 0; i < item.length; i++) {
+    // 遍历能拆的红包,绑定事件
+    item[i].onclick = function () {
+      if (click) {
+        click = false
+
+        console.log('选择的是第' + i + '个红包')
+        // 这里写点击红包后的处理
+
+      }
+    }
+  }
+
 </script>
 
 </body>

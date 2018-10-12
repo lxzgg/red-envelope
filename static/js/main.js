@@ -31,7 +31,7 @@ function ajax(options) {
 
       if (success) success.call(this, result)
 
-    } else if (fail) fail.call(this, result)
+    } else if (fail) fail.call(this, true)
 
     if (complete) complete.call(this, result)
   }
@@ -113,5 +113,8 @@ function tabBar(tabIndex) {
   const bar = tabBar.getElementsByClassName('bar')
 
   bar[tabIndex].classList.add('active')
-}
 
+  bar[tabIndex].onclick = function (e) {
+    e.preventDefault()
+  }
+}

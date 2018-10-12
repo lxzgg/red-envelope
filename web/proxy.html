@@ -61,13 +61,13 @@
       </div>
     </a>
 
-    <div class="item">
+    <a class="item" href="proxy_excitation.html">
       <i class="icon icon-proxy_excitation"></i>
       <div class="item-name">
         <div>超级激励</div>
         <div>点击查看</div>
       </div>
-    </div>
+    </a>
 
     <a class="item" href="proxy_detail.html">
       <i class="icon icon-proxy_withdraw"></i>
@@ -125,13 +125,27 @@
   // 提现
   function withdraw() {
 
-    prompt({
-      message: '系统不支持1元以下提现',
-      cancel: true,
-      success: function () {
-        console.log(2)
-      },
-    })
+    if (0) {
+
+      prompt({
+        message: '系统不支持1元以下提现',
+        cancel: false,
+        success: function () {
+          console.log(2)
+        },
+      })
+
+    } else {
+
+      prompt({
+        message: '提取佣金1.60元?',
+        cancel: true,
+        success: function () {
+          console.log(2)
+        },
+      })
+
+    }
 
   }
 </script>
