@@ -108,7 +108,22 @@ function prompt(options) {
 }
 
 window.onload = function () {
+  tabBar()
+}
 
+// 底部导航
+function tabBar() {
+  let tabIndex = 2
+  const tabBar = document.getElementById('tabBar')
+  const bar = tabBar.getElementsByClassName('bar')
+  for (let i = 0; i < bar.length; i++) {
+    bar[i].onclick = function () {
+      if (this.className.includes('active')) return
+      bar[tabIndex].classList.remove('active')
+      tabIndex = i
+      this.classList.add('active')
+    }
+  }
 }
 
 // 提现
