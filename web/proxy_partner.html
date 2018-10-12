@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>代理中心-我的伙伴</title>
+  <script>
+    document.write(`<link rel="stylesheet" href="../static/css/main.css?v=${Math.random()}">`)
+  </script>
+</head>
+
+<body>
+
+<main class="partner">
+
+  <div class="desc">
+    <div class="desc-line"></div>
+    <div class="desc-content">数据每半个小时更新一次，代理下线每级显示10条最新代理信息。</div>
+  </div>
+
+  <div class="count">代理人数为1人 总人数为1人</div>
+
+  <div class="third_level" id="third_level">
+
+    <div class="level-list">
+
+      <div class="cell">
+        <div class="cell-title">
+          <i class="icon icon-proxy_partner"></i>
+          <span>我的一级伙伴</span>
+        </div>
+      </div>
+
+      <div class="item-content" style="display: none">
+
+        <div class="content-title">
+          <div>Tel</div>
+          <div>加入时间</div>
+        </div>
+
+        <div class="content-item">
+          <div>159****1116</div>
+          <div>2018/9/16</div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="level-list">
+
+      <div class="cell">
+        <div class="cell-title">
+          <i class="icon icon-proxy_partner"></i>
+          <span>我的二级伙伴</span>
+        </div>
+      </div>
+
+      <div class="item-content" style="display: none">
+
+        <div class="content-title">
+          <div>Tel</div>
+          <div>加入时间</div>
+        </div>
+
+        <div class="content-item">
+          <div>159****1116</div>
+          <div>2018/9/16</div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="level-list">
+
+      <div class="cell">
+        <div class="cell-title">
+          <i class="icon icon-proxy_partner"></i>
+          <span>我的三级伙伴</span>
+        </div>
+      </div>
+
+      <div class="item-content" style="display: none">
+
+        <div class="content-title">
+          <div>Tel</div>
+          <div>加入时间</div>
+        </div>
+
+        <div class="content-item">
+          <div>159****1116</div>
+          <div>2018/9/16</div>
+        </div>
+        <div class="content-item">
+          <div>159****1116</div>
+          <div>2018/9/16</div>
+        </div>
+        <div class="content-item">
+          <div>159****1116</div>
+          <div>2018/9/16</div>
+        </div>
+        <div class="content-item">
+          <div>159****1116</div>
+          <div>2018/9/16</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer id="tabBar" class="tabBar">
+  <a class="bar" href="redBag.html">
+    <i class="icon icon-gift_bag"></i>
+    <div>红包</div>
+  </a>
+  <a class="bar" href="openRedBag.html">
+    <i class="icon icon-red_envelopes"></i>
+    <div>拆红包</div>
+  </a>
+  <a class="bar" href="proxy.html">
+    <i class="icon icon-proxy"></i>
+    <div>代理</div>
+  </a>
+  <a class="bar" href="mall.html">
+    <i class="icon icon-mall"></i>
+    <div>商城</div>
+  </a>
+  <a class="bar" href="customerService.html">
+    <i class="icon icon-service"></i>
+    <div>客服</div>
+  </a>
+</footer>
+
+<script !src="">
+  // 三级代理toggle
+  function third_level() {
+    const third_level = document.getElementById('third_level')
+    const cell = third_level.getElementsByClassName('cell')
+    const content = third_level.getElementsByClassName('item-content')
+
+    for (let i = 0; i < cell.length; i++) {
+      cell[i].onclick = function () {
+        if (content[i].style.display === 'none') {
+          content[i].style.display = 'block'
+        } else {
+          content[i].style.display = 'none'
+        }
+      }
+    }
+  }
+
+  third_level()
+</script>
+
+<script>
+  document.write(`<${'script'} src="../static/js/main.js?v=${Math.random()}"></${'script'}>`)
+</script>
+
+</body>
+</html>

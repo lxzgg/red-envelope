@@ -113,28 +113,17 @@ window.onload = function () {
 
 // 底部导航
 function tabBar() {
-  let tabIndex = 2
   const tabBar = document.getElementById('tabBar')
   const bar = tabBar.getElementsByClassName('bar')
+
+  let tabIndex = sessionStorage.getItem('tabIndex') || 2
+  bar[tabIndex].classList.add('active')
+
   for (let i = 0; i < bar.length; i++) {
-    bar[i].onclick = function () {
-      if (this.className.includes('active')) return
-      bar[tabIndex].classList.remove('active')
-      tabIndex = i
-      this.classList.add('active')
+    bar[i].onclick = function (e) {
+      if (this.className.includes('active')) return e.preventDefault()
+      sessionStorage.setItem('tabIndex', String(i))
     }
   }
 }
 
-// 提现
-function withdraw() {
-
-  prompt({
-    message: '系统不支持1元以下提现',
-    cancel: true,
-    success: function () {
-      console.log(2)
-    },
-  })
-
-}
