@@ -120,10 +120,8 @@ body {
   }
 
   .desc {
-    position: absolute;
-    bottom: px2rem(130);
     padding: 0 px2rem(30);
-    margin-top: px2rem(60);
+    margin-top: px2rem(150);
     font-size: px2rem(24);
     color: #333333;
   }
@@ -136,6 +134,7 @@ body {
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
+  box-sizing: content-box;
 
   .my {
     display: flex;
@@ -214,7 +213,7 @@ body {
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
-
+  box-sizing: content-box;
   .QR_Code {
     display: flex;
     justify-content: center;
@@ -228,11 +227,10 @@ body {
 
 // 拆红包
 .openRedBag {
-  height: 100%;
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
-
+  box-sizing: content-box;
   .redBag {
     display: flex;
     flex-wrap: wrap;
@@ -259,7 +257,7 @@ body {
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
-
+  box-sizing: content-box;
   .ad {
     display: flex;
     align-items: center;
@@ -348,7 +346,7 @@ body {
   padding: px2rem(30) px2rem(30) px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
-
+  box-sizing: content-box;
   .list {
 
     .title {
@@ -406,7 +404,7 @@ body {
   padding: px2rem(30) px2rem(30) px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
-
+  box-sizing: content-box;
   .desc {
     display: flex;
     align-items: center;
@@ -504,7 +502,7 @@ body {
 
 .excitation {
   padding-bottom: px2rem(100);
-
+  box-sizing: content-box;
   .header {
     line-height: px2rem(50);
     height: px2rem(300);
@@ -521,7 +519,7 @@ body {
       font-size: px2rem(28);
       color: #FFF;
       opacity: 0.7;
-      span{
+      span {
         color: #f1c51d;
       }
     }

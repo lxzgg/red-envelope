@@ -244,10 +244,8 @@ body {
   border-radius: 1.875rem;
 }
 .login .desc {
-  position: absolute;
-  bottom: 4.0625rem;
   padding: 0 0.9375rem;
-  margin-top: 1.875rem;
+  margin-top: 4.6875rem;
   font-size: 0.75rem;
   color: #333333;
 }
@@ -257,6 +255,7 @@ body {
   padding-bottom: 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
+  box-sizing: content-box;
 }
 .proxy .my {
   display: flex;
@@ -318,6 +317,7 @@ body {
   padding-bottom: 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
+  box-sizing: content-box;
 }
 .code .QR_Code {
   display: flex;
@@ -330,10 +330,10 @@ body {
 }
 
 .openRedBag {
-  height: 100%;
   padding-bottom: 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
+  box-sizing: content-box;
 }
 .openRedBag .redBag {
   display: flex;
@@ -356,6 +356,7 @@ body {
   padding-bottom: 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
+  box-sizing: content-box;
 }
 .redBag .ad {
   display: flex;
@@ -431,6 +432,7 @@ body {
   padding: 0.9375rem 0.9375rem 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
+  box-sizing: content-box;
 }
 .detail .list .title {
   display: flex;
@@ -475,6 +477,7 @@ body {
   padding: 0.9375rem 0.9375rem 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
+  box-sizing: content-box;
 }
 .partner .desc {
   display: flex;
@@ -546,6 +549,7 @@ body {
 
 .excitation {
   padding-bottom: 3.125rem;
+  box-sizing: content-box;
 }
 .excitation .header {
   line-height: 1.5625rem;
