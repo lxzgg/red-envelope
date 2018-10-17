@@ -251,7 +251,6 @@ body {
 }
 
 .proxy {
-  height: 100%;
   padding-bottom: 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -313,7 +312,6 @@ body {
 }
 
 .code {
-  height: 100%;
   padding-bottom: 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -352,7 +350,6 @@ body {
 }
 
 .redBag {
-  height: 100%;
   padding-bottom: 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -428,7 +425,6 @@ body {
 }
 
 .detail {
-  height: 100%;
   padding: 0.9375rem 0.9375rem 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -473,7 +469,6 @@ body {
 }
 
 .partner {
-  height: 100%;
   padding: 0.9375rem 0.9375rem 3.125rem;
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -627,4 +622,108 @@ body {
   text-align: center;
   font-size: 0.875rem;
   color: #333333;
+}
+
+.mall {
+  padding-bottom: 3.75rem;
+  background: url(../image/login_bg.png) no-repeat fixed;
+  background-size: 100% 100%;
+  box-sizing: content-box;
+}
+.mall .info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 3.125rem;
+}
+.mall .info div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  height: 1.875rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fefefe;
+  opacity: 0.8;
+  font-size: 0.8125rem;
+}
+.mall .info .info-id {
+  border-bottom-right-radius: 0.9375rem;
+  border-top-right-radius: 0.9375rem;
+}
+.mall .info .info-money {
+  border-top-left-radius: 0.9375rem;
+  border-bottom-left-radius: 0.9375rem;
+}
+.mall .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4.6875rem 0.3125rem 0;
+}
+.mall .list .item {
+  margin-top: 0.3125rem;
+  width: 7.375rem;
+  height: 12.1875rem;
+  border-radius: 0.1875rem;
+  font-size: 0.8125rem;
+  background: #FFF;
+}
+.mall .list .item img {
+  width: 7.375rem;
+  height: 7.375rem;
+}
+.mall .list .item .item-content {
+  padding: 0.3125rem 0.625rem 0;
+  line-height: 1.25rem;
+}
+.mall .form {
+  background: #FFF;
+  padding: 0.46875rem;
+  border-radius: 0.1875rem;
+  margin: 1.5625rem 0.46875rem 0;
+  font-size: 1rem;
+}
+.mall .form > div {
+  display: flex;
+  align-items: center;
+  padding: 0.46875rem 0;
+}
+.mall .form .name {
+  width: 5rem;
+  font-weight: bold;
+  text-align: right;
+}
+.mall .form .cell {
+  display: flex;
+  align-items: center;
+}
+.mall .form .cell > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.mall .form .in {
+  display: flex;
+  align-items: center;
+}
+.mall .form .in input {
+  width: 14.375rem;
+  height: 1.75rem;
+  border-radius: 0.1875rem;
+  border: 1px solid #cecccc;
+}
+.mall .form .in .sel select {
+  width: 4.53125rem;
+  height: 1.71875rem;
+  border-radius: 6px;
+  border: solid 1px #cecccc;
+}
+.mall .btn {
+  width: 22.8125rem;
+  height: 2.5625rem;
+  margin-top: 0.9375rem;
+  border-radius: 2.5625rem;
+  color: #FFF;
+  background-color: #f1c51d;
 }

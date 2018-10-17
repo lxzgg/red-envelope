@@ -130,7 +130,6 @@ body {
 
 // 代理中心
 .proxy {
-  height: 100%;
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -161,7 +160,6 @@ body {
   }
 
   .list {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -209,7 +207,6 @@ body {
 
 // 分享二维码页面
 .code {
-  height: 100%;
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -253,7 +250,6 @@ body {
 
 // 红包
 .redBag {
-  height: 100%;
   padding-bottom: px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -342,7 +338,6 @@ body {
 }
 
 .detail {
-  height: 100%;
   padding: px2rem(30) px2rem(30) px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -400,7 +395,6 @@ body {
 }
 
 .partner {
-  height: 100%;
   padding: px2rem(30) px2rem(30) px2rem(100);
   background: url(../image/login_bg.png) no-repeat fixed;
   background-size: 100% 100%;
@@ -596,4 +590,122 @@ body {
     }
 
   }
+}
+
+// 商城
+.mall {
+  padding-bottom: px2rem(120);
+  background: url(../image/login_bg.png) no-repeat fixed;
+  background-size: 100% 100%;
+  box-sizing: content-box;
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-top: px2rem(100);
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: px2rem(20);
+      height: px2rem(60);
+      background-color: rgba(0, 0, 0, .6);
+      color: #fefefe;
+      opacity: 0.8;
+      font-size: px2rem(26);
+    }
+
+    .info-id {
+      border-bottom-right-radius: px2rem(30);
+      border-top-right-radius: px2rem(30);
+    }
+
+    .info-money {
+      border-top-left-radius: px2rem(30);
+      border-bottom-left-radius: px2rem(30);
+    }
+
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: px2rem(150) px2rem(10) 0;
+    .item {
+      margin-top: px2rem(10);
+      width: px2rem(236);
+      height: px2rem(390);
+      border-radius: px2rem(6);
+      font-size: px2rem(26);
+      background: #FFF;
+      img {
+        width: px2rem(236);
+        height: px2rem(236);
+      }
+      .item-content {
+        padding: px2rem(10) px2rem(20) 0;
+        line-height: px2rem(40);
+      }
+    }
+  }
+
+  .form {
+    background: #FFF;
+    padding: px2rem(15);
+    border-radius: px2rem(6);
+    margin: px2rem(50) px2rem(15) 0;
+    font-size: px2rem(32);
+    > div {
+      display: flex;
+      align-items: center;
+      padding: px2rem(15) 0;
+    }
+    .name {
+      width: px2rem(160);
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .cell {
+      display: flex;
+      align-items: center;
+      > div {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .in {
+      display: flex;
+      align-items: center;
+      input {
+        width: px2rem(460);
+        height: px2rem(56);
+        border-radius: px2rem(6);
+        border: 1px solid #cecccc;
+      }
+      .sel {
+        select {
+          width: px2rem(145);
+          height: px2rem(55);
+          border-radius: 6px;
+          border: solid 1px #cecccc;
+        }
+      }
+    }
+  }
+
+  .btn {
+    width: px2rem(730);
+    height: px2rem(82);
+    margin-top: px2rem(30);
+
+    border-radius: px2rem(82);
+    color: #FFF;
+    background-color: #f1c51d;
+  }
+
 }
