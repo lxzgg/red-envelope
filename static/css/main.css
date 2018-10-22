@@ -727,3 +727,58 @@ body {
   color: #FFF;
   background-color: #f1c51d;
 }
+
+.openAfter {
+  padding-bottom: 3.125rem;
+  background: url(../image/login_bg.png) no-repeat fixed;
+  background-size: 100% 100%;
+  box-sizing: content-box;
+}
+.openAfter .blank-line {
+  padding-top: 4.6875rem;
+}
+.openAfter .go {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 21.5625rem;
+  height: 5.625rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: solid 2px #313131;
+}
+.openAfter .go .go-price {
+  font-size: 0.875rem;
+  color: #656565;
+}
+.openAfter .go .go-start {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #656565;
+}
+.openAfter .redBag {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.5625rem;
+}
+.openAfter .redBag .bag-item {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 5.3125rem;
+  margin: 0.46875rem 0;
+  color: #fefefe;
+  background: url(../image/openAfter.png) no-repeat center;
+  background-size: 3.75rem 5.3125rem;
+}
+.openAfter .redBag .item-selected {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fbda30;
+  padding-top: 1.25rem;
+  background: url(../image/open-selected.png) no-repeat center;
+  background-size: 3.75rem 5.3125rem;
+}
